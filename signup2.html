@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="signup2.css" />
+</head>
+<body>
+  <div class="container">
+    <h2 id="title">Signup Page</h2>
+
+    <form id="signupForm">
+      <label>Email</label>
+      <input
+        type="text"
+        id="email"
+        placeholder="Example@email.com"
+      />
+      <p class="error" id="emailError">
+        Make sure email is more than 3 characters and has @ and .
+      </p>
+
+      <label>Password</label>
+      <input
+        type="password"
+        id="password"
+        placeholder="Your Password"
+      />
+      <p class="error" id="passwordError">
+        Make sure password is more than 8 characters.
+      </p>
+
+      <p class="success" id="successMsg">All good to go 👍</p>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="signup2.js"></script>
+</body>
+</html>
