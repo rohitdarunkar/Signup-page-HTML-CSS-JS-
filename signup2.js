@@ -8,7 +8,7 @@ const form = document.getElementById("signupForm");
 let isEmailValid = false;
 let isPasswordValid = false;
 
-// Email validation
+
 emailInput.addEventListener("input", () => {
   const value = emailInput.value;
 
@@ -23,7 +23,7 @@ emailInput.addEventListener("input", () => {
   checkValidationStatus();
 });
 
-// Password validation
+
 passwordInput.addEventListener("input", () => {
   const value = passwordInput.value;
 
@@ -38,7 +38,7 @@ passwordInput.addEventListener("input", () => {
   checkValidationStatus();
 });
 
-// Show green message ONLY when both are valid
+
 function checkValidationStatus() {
   if (isEmailValid && isPasswordValid) {
     successMsg.style.display = "block";
@@ -47,7 +47,6 @@ function checkValidationStatus() {
   }
 }
 
-// Submit handling
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -58,7 +57,7 @@ form.addEventListener("submit", (e) => {
   if (confirmSubmit) {
     alert("Successful signup!");
   } else {
-    // Reset everything
+  
     emailInput.value = "";
     passwordInput.value = "";
     emailError.style.display = "none";
@@ -68,3 +67,4 @@ form.addEventListener("submit", (e) => {
     isPasswordValid = false;
   }
 });
+
